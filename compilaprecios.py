@@ -45,7 +45,7 @@ def clasificar_producto(producto):
     return "Sin clasificación"
 
 # Definir el directorio donde se encuentran los archivos CSV
-directory = r'G:\Mi unidad\SUPERMERCADOS'
+directory = r'C:\Users\dmeza\preciossupermercados'
 # Construir el patrón de búsqueda para los archivos CSV generados
 pattern = os.path.join(directory, "preciossupermercados_*.csv")
 # Obtener la lista de archivos que cumplen con el patrón
