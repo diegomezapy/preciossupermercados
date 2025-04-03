@@ -176,7 +176,7 @@ def main_scrape():
     
     df = pd.DataFrame(data)
     
-    directory = r'G:\Mi unidad\SUPERMERCADOS'
+    directory = r'C:\Users\dmeza\preciossupermercados'
     filename = f"preciossupermercados_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
     file_path = os.path.join(directory, filename)
     try:
