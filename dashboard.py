@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from dash import Dash, dcc, html, Input, Output
 
 # Cargar el archivo CSV combinado
-file_path = r'G:\Mi unidad\SUPERMERCADOS\preciossupermercados_combined.csv'
+file_path = r'C:\Users\dmeza\preciossupermercados\preciossupermercados_combined.csv'
 df = pd.read_csv(file_path)
 
 # Convertir 'FechaConsulta' a tipo datetime
