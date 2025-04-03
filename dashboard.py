@@ -1,11 +1,13 @@
-
 import pandas as pd
 import plotly.graph_objects as go
 from dash import Dash, dcc, html, Input, Output
+import requests
+import io
 
-# Cargar el archivo CSV combinado
-file_path = r'C:\Users\dmeza\preciossupermercados\preciossupermercados_combined.csv'
-df = pd.read_csv(file_path)
+# URL del archivo CSV en GitHub
+url = 'https://raw.githubusercontent.com/diegomezapy/preciossupermercados/main/preciossupermercados_combined.csv'
+response = requests.get(url)
+df = pd.read_csv(io.StringIO(response.text))
 
 # Convertir 'FechaConsulta' a tipo datetime
 df['FechaConsulta'] = pd.to_datetime(df['FechaConsulta'])
